@@ -5,27 +5,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
     tools:context=".MainActivity">
 
-    <fragment
-        android:tag="첫번째프래그먼트"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        class="com.neppplus.fragment_20211204.fragments.FirstFragment"/>
 
-    <fragment
-        android:tag="두번재프래그먼트"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        class="com.neppplus.fragment_20211204.fragments.SecondFragment$SecondFragment"
-        />
+        android:layout_height="match_parent">
 
-    <fragment
-        android:tag="firstFlag"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        class="com.neppplus.fragment_20211204.fragments.FirstFragment"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <fragment
+                android:tag="첫번째프래그먼트"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                class="com.neppplus.fragment_20211204.fragments.FirstFragment"/>
+
+            <fragment
+                android:tag="두번재프래그먼트"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                class="com.neppplus.fragment_20211204.fragments.SecondFragment$SecondFragment"
+                />
+
+            <fragment
+                android:tag="firstFlag"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                class="com.neppplus.fragment_20211204.fragments.FirstFragment"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
 
 
 </LinearLayout>
