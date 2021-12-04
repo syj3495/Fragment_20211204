@@ -14,6 +14,13 @@
         android:layout_height="300dp"
         class="com.neppplus.fragment_20211204.fragments.FirstFragment"/>
 
+    <fragment
+        android:tag="두번재프래그먼트"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        class="com.neppplus.fragment_20211204.fragments.SecondFragment$SecondFragment"
+        />
+
 
     <fragment
         android:tag="firstFlag"
